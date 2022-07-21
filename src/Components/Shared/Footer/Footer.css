@@ -1,0 +1,20 @@
+.footer-container {
+  background: #00193d;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container p {
+  text-align: justify;
+}
+.social-icon-div{
+    display: flex;
+    justify-content: center;
+}
+.footer-container hr {
+  width: 100%;
+  border: 1px solid #0052cc;
+}
