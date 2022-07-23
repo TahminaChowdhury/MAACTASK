@@ -1,9 +1,10 @@
-import React from 'react';
+import React  from 'react';
 import './NavBar.css';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../../../images/Logo.png';
 import { Link } from 'react-router-dom';
 import useFirebase from '../../../Hook/useFirebase';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const NavBar = () => {
   const { user, logout } = useFirebase();
@@ -27,6 +28,7 @@ const NavBar = () => {
                 <button onClick={logout} className="logout-btn px-3 py-2">
                   Logut
                 </button>
+                
                 <img
                   src={
                     user.photoURL
@@ -36,6 +38,8 @@ const NavBar = () => {
                   alt=""
                   className="img-fluid user-img ms-5"
                 />
+                <span className='ms-2'>{user.displayName}</span>
+                <Link to='/dashboard' className='ms-2'><KeyboardArrowDownIcon/></Link>
               </div>
             ) : (
               <>

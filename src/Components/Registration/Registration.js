@@ -8,8 +8,16 @@ const Registration = () => {
   const { error, signupWithEmailAndPassword } = useFirebase();
   const { register, handleSubmit } = useForm();
   const onSubmit = (data, e) => {
-    e.preventDefault()
-    signupWithEmailAndPassword(data.name, data.email, data.password, data.passwordConfirm, data.employeeId, data.role, data.phoneNumber);
+    e.preventDefault();
+    signupWithEmailAndPassword(
+      data.name,
+      data.email,
+      data.password,
+      data.passwordConfirm,
+      data.employeeId,
+      data.role,
+      data.phoneNumber
+    );
   };
 
   return (

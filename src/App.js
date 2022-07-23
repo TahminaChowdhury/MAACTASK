@@ -6,6 +6,9 @@ import Login from './Components/Login/Login';
 import Registration from './Components/Registration/Registration';
 import NavBar from './Components/Shared/NavBar/NavBar';
 import Footer from './Components/Shared/Footer/Footer';
+import DashBoard from './Components/DashBoard/DashBoard';
+import Region from './Components/DashBoard/Region/Region';
+import Area from './Components/DashBoard/Area/Area';
 
 
 function App() {
@@ -18,6 +21,9 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/registration" element={<Registration />} />
+          <Route path="/dashboard" element={<DashBoard />} />
+          <Route path="/region" element={<Region />} />
+          <Route path="/area" element={<Area />} />
         </Routes>
         <Footer />
       </BrowserRouter>
