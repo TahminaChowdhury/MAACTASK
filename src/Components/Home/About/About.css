@@ -1,3 +1,21 @@
+.about-container {
+  width: 100%;
+  height: 1196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.images-bg {
+  background-image: url(../../../images/Group\ 34028.png);
+  width: 196.67px;
+  height: 264px;
+  position: relative;
+}
+.pre-order-img-div {
+  position: absolute;
+  top: -200px;
+}
 .about-info-div p {
   font-size: 20px;
 }
@@ -6,6 +24,12 @@
 }
 .about-title {
   margin: 40px 0px;
+}
+.bg-color {
+  width: 440px;
+  height: 486px;
+  background: #f1f6ff;
+  border-radius: 32px;
 }
 .countup h1 {
   color: #0052cc;

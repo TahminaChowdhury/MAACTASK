@@ -1,0 +1,30 @@
+.signup-container {
+  width: 1024px;
+  height: 1256px;
+  background: #ffffff;
+  border-radius: 32px;
+  margin: 70px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.signup-container p{
+    font-size: 24px;
+    color: #4E4E4E;
+}
+select{
+  width: 608px;
+  font-family: inherit;
+  font-size: 20px;
+  color: #898989;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 20px 10px;
+  border-bottom: 2px solid #e1e1e1;
+  border-radius: 5px;
+}
+.checkbox-input input, span{
+  font-size: 20px;
+  font-weight: 500px;
+}

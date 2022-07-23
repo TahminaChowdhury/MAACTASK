@@ -2,17 +2,40 @@ import React from 'react';
 import './About.css';
 import { Container } from 'react-bootstrap';
 import './About.css';
-import img1 from '../../../images/monitor-mobbile.png';
-import img2 from '../../../images/people.png';
-import img3 from '../../../images/user.png';
-import img4 from '../../../images/cup.png';
+import img1 from '../../../images/Pre order vs delivery 1.png';
+import img2 from '../../../images/Top Selling Routes 1.png';
+import img3 from '../../../images/Group 34025.png';
+import img4 from '../../../images/Ellipse 1.png';
+import mobile from '../../../images/monitor-mobbile.png';
+import people from '../../../images/people.png';
+import user from '../../../images/user.png';
+import cup from '../../../images/cup.png';
 
 const About = () => {
   return (
-    <div>
+    <div className="about-container">
       <Container>
         <div className="row">
-          <div className="col-sm-12 col-md-6"></div>
+          <div className="col-sm-12 col-md-6">
+            <div className="bg-color d-flex justify-content-center align-items-center">
+              <div className="images-bg d-flex justify-content-center">
+                <div className="pre-order-img-div">
+                  <img src={img1} alt="" />
+                </div>
+                <div
+                  className="d-flex justify-content-center"
+                  style={{ marginTop: '120px' }}
+                >
+                  <div>
+                    <img src={img2} alt="" />
+                  </div>
+                  <div>
+                    <img src={img3} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* About info*/}
           <div className="col-sm-12 col-md-6">
@@ -28,11 +51,14 @@ const About = () => {
                 vitae dicta sunt explicabo.
               </p>
             </div>
-            <div>
-              <div>
-                <img src="" alt="" />
+            <div
+              className="d-flex justify-content-center my-5"
+              style={{ borderTop: '1px solid black' }}
+            >
+              <div className="mt-5">
+                <img src={img4} alt="" />
               </div>
-              <div>
+              <div className="ms-5 mt-5">
                 <p style={{ fontSize: '22px', fontWeight: '500' }}>
                   "Fieldx is for teams that care about their product growth."
                 </p>
@@ -44,25 +70,25 @@ const About = () => {
           </div>
 
           {/* Countup*/}
-          <div className="col-12 my-5 py-5">
+          <div className="col-12" style={{ marginTop: '150px' }}>
             <div className="row text-center countup">
               <div className="col-3">
-                <img src={img1} alt="" />
+                <img src={mobile} alt="" />
                 <h1 className="my-2">10+</h1>
                 <p>Platforms Created</p>
               </div>
               <div className="col-3">
-                <img src={img2} alt="" />
+                <img src={people} alt="" />
                 <h1 className="my-2">1559+</h1>
                 <p>Total Users</p>
               </div>
               <div className="col-3">
-                <img src={img3} alt="" />
+                <img src={user} alt="" />
                 <h1 className="my-2">10+</h1>
                 <p>Total Clients</p>
               </div>
               <div className="col-3">
-                <img src={img4} alt="" />
+                <img src={cup} alt="" />
                 <h1 className="my-2">300 Days</h1>
                 <p>In Operations</p>
               </div>

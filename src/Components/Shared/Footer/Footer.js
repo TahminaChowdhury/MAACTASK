@@ -7,8 +7,8 @@ import facebook from '../../../images/Vector.png';
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <div className="pt-5">
+    <div className="footer-container pt-5">
+      <div>
         <img src={fieldX} alt="" />
       </div>
       <div className="py-4">
@@ -17,11 +17,11 @@ const Footer = () => {
           accusantium doloremque laudantium, totam rem aperiam eaque.
         </p>
       </div>
-      <div className="social-icon-div">
+      <div className="social-icon-div pb-5">
         <div>
           <img src={twitter} alt="" />
         </div>
-        <div className="mx-3">
+        <div className="mx-5">
           <img src={linkedIn} alt="" />
         </div>
         <div>
